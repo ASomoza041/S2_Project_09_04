@@ -5,6 +5,7 @@
  */
 
 /* Form Styles */
+/* The code below hold all the styles for the elements invloved with the form. The styles affect many things such as spacing and many decorative touches. Some selectors are very specefic and chose elements based on attributes. */
 form {
     margin: 0px 5px;
 }
@@ -13,6 +14,8 @@ fieldset {
     background-color: rgba(138, 141, 172, .80);
     width: 80%;
     margin: 10px 0px;
+    border: 5px double rgb(96, 96, 104);
+    box-shadow: 4px 4px 3px rgb(33, 34, 48);
 }
 
 fieldset#custInfo {
@@ -24,6 +27,7 @@ legend {
     padding: 6px;
     background-color: rgb(53, 63, 165);
     color: whitesmoke;
+    border-radius: 5px;
 }
 
 div.formRow {
@@ -43,8 +47,19 @@ label#check {
     text-decoration: underline;
 }
 
+input[type="submit"],
+input[type="button"] {
+    color: blue;
+    margin: 0px 15px;
+}
+
+input[type="reset"] {
+    color: red;
+}
+
+
 /* Valid styles */
-/* These styles are to assist the user in making sure they input their data correctly. */
+/* These styles are to assist the user in making sure they input their data correctly. The selectors mentioned below will show the styles below when the information is acceptable or not. It will display differently for either scenario. */
 input#fName:focus:valid,
 input#lName:focus:valid,
 input#street:focus:valid,

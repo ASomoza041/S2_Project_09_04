@@ -6,11 +6,12 @@
  -->
 
 <head>
+    <!-- The head element holds data that sets up the website. It holds links to connect to stylesheets and it has a script element to hold the code in order to make the form work. -->
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Millennium Computers</title>
     <link rel="stylesheet" href="mc_styles.css" />
     <link rel="stylesheet" href="mc_forms.css" />
-    <link rel="stylesheet" href="mc_script.js" />
+    <script src="mc_script.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,8 @@
         <img src="mc_logo.png" alt="">
     </header>
     <form name="cForm" action="http://www.mill_computers.com/orders/process.cgi" method="POST">
+        <!-- The code below is the actual form used for this project. It uses a variety of widgets to let the user interact with the form and labels that link up to those widgets. The widgets let the user choose what their computer holds as well as enter customer information.  -->
+        <!-- The code below is part of the form but these widgets are input boxes. The input boxes allow the user to type in their own information as long as it fits within the parameters. -->
         <fieldset id="custInfo">
             <legend>Customer Information</legend>
             <p id="required">All Customer Information Is Required!</p>
@@ -58,7 +61,7 @@
 
 
         </fieldset>
-
+        <!-- This code is still part of the form, but the code below is selection lists. The code allows the user to click one on the few choices for the different parts. -->
         <fieldset id="comComp">
             <legend>Computer Components</legend>
             <div class="formRow">
@@ -100,7 +103,7 @@
             </div>
 
         </fieldset>
-
+        <!-- This code is still part of the form, but the code below is radio buttons. The code allows the user to click either yes or no for the different parts. -->
         <fieldset>
             <legend>DVD Burner?</legend>
             <label for="dvd">Yes</label>
