@@ -4,25 +4,63 @@
     Date: 1-23-29
  */
 
+/* Form Styles */
+form {
+    margin: 0px 5px;
+}
+
+fieldset {
+    background-color: rgba(138, 141, 172, .80);
+    width: 80%;
+    margin: 10px 0px;
+}
+
+fieldset#custInfo {
+    margin: 0px 0px 10px 0px;
+}
+
+legend {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 6px;
+    background-color: rgb(53, 63, 165);
+    color: whitesmoke;
+}
+
+div.formRow {
+    margin: 8px 0px;
+}
+
+div#buttons {
+    text-align: center;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+label#check {
+    color: rgb(171, 1, 1);
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /* Valid styles */
 /* These styles are to assist the user in making sure they input their data correctly. */
-input#fName:valid:focus,
-input#lName:valid:focus,
-input#street:valid:focus,
-input#city:valid:focus,
-input#state:valid:focus,
-input#zip:valid:focus,
-input#phone:valid:focus {
+input#fName:focus:valid,
+input#lName:focus:valid,
+input#street:focus:valid,
+input#city:focus:valid,
+input#state:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid {
     background: rgb(220, 255, 220) url(mc_go.png) bottom right/contain no-repeat;
 }
 
-input#fName:invalid:focus,
-input#lName:invalid:focus,
-input#street:invalid:focus,
-input#city:invalid:focus,
-input#state:invalid:focus,
-input#zip:invalid:focus,
-input#phone:invalid:focus {
+input#fName:focus:invalid,
+input#lName:focus:invalid,
+input#street:focus:invalid,
+input#city:focus:invalid,
+input#state:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid {
     background: rgb(255, 232, 233) url(mc_stop.png) bottom right/contain no-repeat;
 }
