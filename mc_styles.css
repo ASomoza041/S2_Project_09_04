@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* 
+    Author: Alex A Somoza
+    Date: 1-23-29
+ */
+
+/* html styles */
+html {
+    background: url(com_code.jpg);
+    background-size: cover;
+}
+
+body {
+    background-color: ;
+    width: 85%;
+    margin: 0px auto 0px auto;
+}
